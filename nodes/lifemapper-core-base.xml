@@ -30,11 +30,8 @@
     <package>tzdata-java</package>
     
     <!-- lifemapper common python dependencies -->
-    <package>opt-lifemapper-more-itertools</package>
     <package>opt-lifemapper-pytest-cov</package>
     <package>opt-lifemapper-requests</package>
-    <package>opt-lifemapper-six</package>
-    <package>opt-lifemapper-zipp</package>
     
     <!-- lifemapper tools -->
     <package>rocks-lmcore</package>

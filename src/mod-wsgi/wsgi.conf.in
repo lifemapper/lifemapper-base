@@ -6,7 +6,8 @@ WSGIPythonHome "/opt/python"
 WSGIPythonPath "/opt/lifemapper:@PYTHON36_PACKAGES@"
 
 # Enable environment for config file 
-SetEnv LMCORE_CONFIG_FILE "/opt/lifemapper/config/config.lmcore.ini"
+SetEnv LIFEMAPPER_SERVER_CONFIG_FILE "/opt/lifemapper/config/config.lmserver.ini"
+SetEnv LIFEMAPPER_SITE_CONFIG_FILE "/opt/lifemapper/config/config.site.ini"
 
 # Mod_wsgi script for Lifemapper content
-# WSGIScriptAliasMatch ^/(api) /opt/lifemapper/LmWebServer/services/common/wsgi.py/$1
+WSGIScriptAliasMatch ^/(api) /opt/lifemapper/LmWebServer/services/common/wsgi.py/$1

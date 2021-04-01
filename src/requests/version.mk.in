@@ -1,18 +1,13 @@
-NAME            = opt-lifemapper-requests
-ARCHIVENAME     = requests
-VERSION         = 2.24.0
-RELEASE         = 1
-WHEEL_POSTFIX   = whl
+NAME = opt-lifemapper-requests
+ARCHIVENAME = requests
+VERSION = 2.25.1
+RELEASE = 0
+WHEEL_POSTFIX	= whl
 
-# requests 2.24.0 dependencies:
-#     chardet<3.1.0,>=3.0.2
-#     idna<2.9,>=2.5
-#     urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1
-#     certifi>=2017.4.17
-URLLIB3         = urllib3-1.25.10-py2.py3-none-any.$(WHEEL_POSTFIX)
-IDNA            = idna-2.10-py2.py3-none-any.$(WHEEL_POSTFIX)
-CERTIFI         = certifi-2020.6.20-py2.py3-none-any.$(WHEEL_POSTFIX)
-CHARDET         = chardet-3.0.4-py2.py3-none-any.$(WHEEL_POSTFIX)
+# requests-2.25.1
+#     chardet<5,>=3.0.2 (4.0.0)
+#     certifi>=2017.4.17 (2020.12.5)
+#     idna<3,>=2.5 (2.10)
+#     urllib3<1.27,>=1.21.1 (1.26.4)
 
 RPM.FILES =  $(PKGROOT)/*
-
